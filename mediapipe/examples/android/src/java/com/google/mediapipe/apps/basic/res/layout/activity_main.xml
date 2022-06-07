@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/preview_display_layout"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_weight="1">
+    <TextView
+            android:id="@+id/no_camera_access_view"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="bottom"
+            android:text="@string/no_camera_access" />
+
+
+
+        
+    </FrameLayout>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/textInstr"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="30dp"
+            
+            android:textSize="20sp"
+            android:text="Instructions"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textFirst"
+            app:layout_constraintTop_toBottomOf="@+id/textInstr"
+            
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="15sp"
+            android:text="First"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/volumeCon"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/textFirst"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            
+            android:text="Volume Control: You can trigger volume control by lowering your little finger  and control volume by increasing and decreasing the space between your thumb and index finger"
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textSecond"
+        app:layout_constraintTop_toBottomOf="@+id/volumeCon"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="15sp"
+        android:text="Second"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:id="@+id/brightCon"
+        app:layout_constraintTop_toBottomOf="@+id/textSecond"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Brightness Control: You can trigger brightness control by lowering your little finger and ring finger and control volume by increasing and decreasing the space between your thumb and index finger"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textThird"
+        app:layout_constraintTop_toBottomOf="@+id/brightCon"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="15sp"
+        android:text="Third"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/brightPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/textThird"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Photo Capture: You can Capture photo by flipping your hand"
+        />
+
+    
+
+
+
+
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
